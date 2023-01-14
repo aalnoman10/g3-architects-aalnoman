@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans';
+    color: #727272;
+    box-sizing: border-box;
+}
+
+.pry-btn {
+    background-color: #ff8903;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding: 75px 10%;
+}
+
+.black {
+    color: #131313;
+}
+
+.orange {
+    color: #ff8903;
+}
+
+/* header */
+header {
+    padding: 25px 10%;
+    background-color: #FF900E1A;
+}
+
+.logo {
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+}
+
+/* nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-right {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-right li {
+    padding: 10px;
+}
+
+.nav-right li a {
+    text-decoration: none;
+    color: #424242;
+    padding: 7px;
+}
+
+/* banner */
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-text {
+    width: 65%;
+    padding: 50px 0;
+}
+
+h1 {
+
+    font-weight: 700;
+    font-size: 64px;
+    color: #131313;
+    padding: 20px 0;
+}
+
+.banner-text p {
+    color: #727272;
+    padding-bottom: 30px;
+}
+
+/* main */
+
+/* features */
+.features {
+    display: flex;
+    align-items: center;
+}
+
+.features-img {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+
+}
+
+.features-info {
+    flex: 1;
+    padding: 70px;
+}
+
+.features-info h3 {
+    font-weight: 500;
+    font-size: 45px;
+    color: #727272;
+}
+
+.features-info p {
+    padding: 30px 0;
+}
+
+/* love enjoy  */
+.lovenjoy {
+    display: flex;
+    gap: 60px;
+}
+
+.lovenjoy>div {
+    flex: 1;
+}
+
+.lovenjoy-info h3 {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin: 24px 0;
+    padding-left: 24px;
+    border-left: 5px solid #ff8903;
+}
+
+.love-info-item {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px gray;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.love-info-item h4 {
+    padding: 10px 0;
+}
+
+.lovenjoy-img {
+    position: relative;
+}
+
+.pry-btn.abso-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 50px;
+}
+
+.btn-experience {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+/* footer */
+footer {}
