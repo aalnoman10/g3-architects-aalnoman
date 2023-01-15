@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+/* common class */
 h3 {
     color: #131313;
     font-weight: 700;
@@ -45,17 +46,17 @@ header {
     background-color: #FF900E1A;
 }
 
-.logo {
-    font-size: 45px;
-    font-weight: 700;
-    color: #131313;
-}
-
 /* nav */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo {
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
 }
 
 .nav-right {
@@ -140,6 +141,7 @@ h1 {
 .features-info p {
     padding: 30px 0;
 }
+
 
 /* love enjoy  */
 .lovenjoy {
@@ -242,4 +244,128 @@ footer {
 
 footer p {
     color: #424242;
+}
+
+@media screen and (max-width: 576px) {
+
+    /* common class */
+    .pry-btn {
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+
+    /* header */
+    header,
+    section {
+        padding: 20px 10px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .logo {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+
+    .nav-right {
+        flex-direction: column;
+    }
+
+    .nav-right li {
+        text-align: center;
+    }
+
+    .banner-text {
+        width: 100%;
+        padding: 25px 0;
+    }
+
+    h1 {
+
+        font-weight: 700;
+        font-size: 30px;
+        color: #131313;
+        padding: 20px 0;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .features-img {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 30px;
+    }
+
+    .features-info {
+        padding: 0;
+    }
+
+    .features-info p {
+        padding: 20px 0;
+    }
+
+    /* love enjoy  */
+    .lovenjoy {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .lovenjoy-info h3 {
+        padding-left: 15px;
+    }
+
+    .lovenjoy-img img {
+        position: relative;
+        margin-bottom: 60px;
+    }
+
+    .pry-btn.abso-btn {
+        position: relative;
+        font-size: 25px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .btn-experience {
+        font-size: 15px;
+    }
+
+    /* facts */
+
+    .facts-conteiner {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin: 20px 0;
+    }
+
+    .bold {
+        font-size: 30px;
+    }
+
+    /* sponsors */
+    .sponsors-items {
+        flex-direction: column;
+        margin: 30px 0;
+    }
+
+    .sponsors-item {
+        margin: 15px;
+    }
+
+    /* footer */
+    footer {
+        margin: 0;
+        padding: 30px 0;
+        border-radius: 0;
+    }
 }
