@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+h3 {
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+    padding-bottom: 24px;
+}
+
 .pry-btn {
     background-color: #ff8903;
     color: #ffffff;
@@ -24,8 +31,8 @@ section {
     padding: 75px 10%;
 }
 
-.black {
-    color: #131313;
+.gray {
+    color: grey;
 }
 
 .orange {
@@ -61,6 +68,13 @@ nav {
 
 .nav-right li {
     padding: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-right li:hover a,
+.nav-right li:hover a i {
+    color: #ff8903;
+    font-weight: 700;
 }
 
 .nav-right li a {
@@ -108,18 +122,19 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
+}
 
+.features-img img {
+    transition: all 0.5s ease-in-out;
+}
+
+.features-img img:hover {
+    transform: scale(1.1);
 }
 
 .features-info {
     flex: 1;
     padding: 70px;
-}
-
-.features-info h3 {
-    font-weight: 500;
-    font-size: 45px;
-    color: #727272;
 }
 
 .features-info p {
@@ -137,11 +152,9 @@ h1 {
 }
 
 .lovenjoy-info h3 {
-    font-weight: 700;
-    font-size: 45px;
-    color: #131313;
     margin: 24px 0;
     padding-left: 24px;
+    padding-bottom: 0;
     border-left: 5px solid #ff8903;
 }
 
@@ -173,6 +186,60 @@ h1 {
     color: #ffffff;
 }
 
+/* facts */
+.facts-conteiner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.facts-item {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #FF900E;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.facts-item:hover {
+    border: 1px solid #0e9bff;
+}
+
+.facts-item-img {
+    width: 50%;
+}
+
+.bold {
+    color: #424242;
+    font-weight: 600;
+    font-size: 45px;
+}
+
+/* sponsors */
+.sponsors {
+    text-align: center;
+}
+
+.sponsors-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
 
 /* footer */
-footer {}
+footer {
+    background-color: #FF900E1A;
+    margin: 25px 10%;
+    padding: 40px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+footer p {
+    color: #424242;
+}
